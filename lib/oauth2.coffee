@@ -67,7 +67,7 @@ class OAuth2 extends OAuthBase
 					expires_in: expire
 					base: @_provider.baseurl
 					request: requestclone
-				result.refresh_token = response.body.refresh_token if response.body.refresh_token && response_type == "code"
+					refresh_token: response.body.refresh_token
 				@_setExtraResponseParameters(configuration, response, result)
 				@_setExtraRequestAuthorizeParameters(req, result)
 				callback null, result
@@ -92,7 +92,7 @@ class OAuth2 extends OAuthBase
 					access_token: response.access_token
 					token_type: response.body.token_type
 					expires_in: expire
-				result.refresh_token = response.body.refresh_token if response.body.refresh_token && keyset.response_type == "code"
+					refresh_token: response.body.refresh_token
 				callback null, result
 
 	request: (req, callback) ->
