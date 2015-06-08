@@ -8,9 +8,9 @@
 	"refresh": "/Authorization/OAuth/Token"
   },
   "href": {
-	"keys": "https://us6.admin.mailchimp.com/account/oauth2/client",
-	"docs": "http://apidocs.mailchimp.com/",
-	"apps": "https://us6.admin.mailchimp.com/account/api/",
-	"provider": "http://mailchimp.com/"
+	"keys": "http://developers.mailup.com/setupen",
+	"docs": "http://help.mailup.com/display/mailupapi/Getting+started+with+the+MailUp+API",
+	"apps": "http://developers.mailup.com/setupen",
+	"provider": "http://mailup.com/"
   }
 }
