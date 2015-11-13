@@ -12,7 +12,12 @@
                 "scope": "{scope}"
             }
         },
-        "access_token": "/oauth/token",
+        "access_token": {
+		  "url": "/oauth/token",
+		  "extra": [
+			"refresh_token"
+		  ]
+		},
         "request": {
             "url": "https://api.createsend.com/api",
             "headers": {
