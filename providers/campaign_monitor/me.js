@@ -3,7 +3,6 @@ var me = {
     params: {},
     fields: {
         email: function(me) {
-            console.log(me);
             return me.EmailAddress;
         }
     }
